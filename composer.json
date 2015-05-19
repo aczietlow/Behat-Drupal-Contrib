@@ -1,0 +1,37 @@
+{
+    "minimum-stability": "alpha",
+    "name": "palantir/drupal-amuzen-cab",
+    "license": "proprietary",
+    "description": "Default Drupal amuzen-cab for Palantir.",
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "http://packagist.drupal-composer.org/"
+        }
+    ],
+    "require": {
+        "behat/behat": "3.0.*@dev",
+        "composer/composer": "~1.0@alpha",
+        "drupal/tangler": "~0.1.3",
+        "drupal/drupal": "7.*",
+        "drupal/drupal-extension": "3.0.*",
+        "drupal/registry_rebuild": "7.*",
+        "drush/drush": "6.*",
+        "winmillwill/settings_compile": "~2.1.1"
+    },
+    "config": {
+        "bin-dir": "bin",
+        "process-timeout": 1200
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "bin/wrapper",
+            "bin/drupal_tangle"
+        ],
+        "post-update-cmd": [
+            "bin/wrapper",
+            "bin/drupal_tangle"
+        ]
+    },
+    "type": "project"
+}
