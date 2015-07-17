@@ -8,9 +8,9 @@ foreach ($enable as $var => $theme) {
   if (!is_numeric($var)) {
     variable_set($var, $theme);
     if ($theme == $enable['theme_default']) {
-      $settings =  variable_get('theme_'. $theme .'_settings');
+      $settings = variable_get('theme' . $theme . 'settings');
       // Configure settings for conceptual theme.
-      variable_set('theme_'. $theme .'_settings', $settings);
+      variable_set('theme' . $theme . 'settings', $settings);
     }
   }
 }

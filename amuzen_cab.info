@@ -4,6 +4,12 @@ package = "AMC install"
 core = "7.x"
 
 ; Contrib
+dependencies[] = admin_menu
+dependencies[] = drop_ship
+dependencies[] = field_ui
+dependencies[] = list
+dependencies[] = module_filter
+dependencies[] = taxonomy
 
 ; Custom
 
