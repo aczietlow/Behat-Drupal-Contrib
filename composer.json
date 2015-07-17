@@ -1,8 +1,8 @@
 {
     "minimum-stability": "alpha",
-    "name": "palantir/drupal-amuzen-cab",
-    "license": "proprietary",
-    "description": "Default Drupal amuzen-cab for Palantir.",
+    "name": "zietlow/drupal-amuzen-cab",
+    "license": "MIT",
+    "description": "Drupal 7 sandbox for testing behat.",
     "repositories": [
         {
             "type": "composer",

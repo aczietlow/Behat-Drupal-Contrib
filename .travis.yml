@@ -6,7 +6,7 @@ php:
 notifications:
   email:
     recipients:
-      - krejci@palantir.net
+      - zietlow@gmail.com
     on_success: change
     on_failure: always
 

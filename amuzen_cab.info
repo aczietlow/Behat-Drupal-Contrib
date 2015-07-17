@@ -1,5 +1,3 @@
-; @copyright (c) Copyright 2015 Palantir.net
-
 name = "Palantir.net's Skeleton Dependencies"
 description = "Base module for the Skeleton project"
 package = "Skeleton install"
