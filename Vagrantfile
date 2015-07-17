@@ -15,7 +15,7 @@ Vagrant.configure("2") do |config|
 
   config.vm.synced_folder ".", "/vagrant", :disabled => true
   config.vm.synced_folder ".", path, :nfs => true
-  config.vm.hostname = "#{project}.local"
+  config.vm.hostname = "#{project}.dev"
   config.vm.network :private_network, ip: ip
   config.hostmanager.enabled = true
   config.hostmanager.manage_host = true
