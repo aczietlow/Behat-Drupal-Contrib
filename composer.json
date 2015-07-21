@@ -7,11 +7,20 @@
         {
             "type": "composer",
             "url": "http://packagist.drupal-composer.org/"
+        },
+        {
+            "type": "vcs",
+            "url": "git@github.com:craychee/drupal-tangler"
+        },
+        {
+            "type": "vcs",
+            "url": "git@github.com:promet/drop_ship"
         }
     ],
     "require": {
         "behat/behat": "3.0.*@dev",
         "composer/composer": "~1.0@alpha",
+        "drupal/drop_ship": "1.*",
         "drupal/drupal": "7.*",
         "drupal/drupal-extension": "3.0.*",
         "drupal/registry_rebuild": "7.*",
